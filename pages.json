@@ -1,0 +1,57 @@
+{
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "知我小说",
+		"navigationBarBackgroundColor": "#F8F8F8"
+	},
+	"pages": [
+		{
+			"path": "pages/bookcity/bookcity",
+			"style": {
+				"navigationBarTitleText": "书城",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/set/set",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#707070",
+		"selectedColor": "#d81e06",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/bookcity/bookcity",
+				"text": "书城",
+				"iconPath": "static/images/tabbar/find-normal.png",
+				"selectedIconPath": "static/images/tabbar/find-active.png"
+			},
+			{
+				"pagePath": "pages/set/set",
+				"text": "设置",
+				"iconPath": "static/images/tabbar/podcast-normal.png",
+				"selectedIconPath": "static/images/tabbar/podcast-active.png"
+			}
+		],
+		"borderStyle": "black",
+		"position": "bottom"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	"condition": {
+		"current": 1,
+		"list": [
+			{
+				"path": "pages/bookcity/bookcity"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
